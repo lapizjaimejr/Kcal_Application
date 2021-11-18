@@ -33,16 +33,18 @@ class EmptyFavoritesScreen extends StatelessWidget {
           ),
         ),
         SizedBox(height: 10),
-        ConstrainedBox(
-          constraints: BoxConstraints.tightFor(width: 350),
-          child: Text(
-            desc,
-            textAlign: TextAlign.center,
-            style: TextStyle(
-              height: 1.5,
-              fontSize: 17,
-              fontWeight: FontWeight.w600,
-              color: Colors.grey,
+        Expanded(
+          child: ConstrainedBox(
+            constraints: BoxConstraints.tightFor(width: 350),
+            child: Text(
+              desc,
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                height: 1.5,
+                fontSize: 17,
+                fontWeight: FontWeight.w600,
+                color: Colors.grey,
+              ),
             ),
           ),
         ),
@@ -65,6 +67,7 @@ class EmptyFavoritesScreen extends StatelessWidget {
             ),
           ),
         ),
+        SizedBox(height: 30),
       ],
     );
   }
